@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اطلب الآن | صالح بريميوم — اختر منتجاتك وأرسل طلبك عبر واتساب</title>
+  <meta name="description" content="صفحة الطلب السريع من صالح بريميوم — اختر معطرات Velvet وكريم Bio Souna بكمياتك، وأرسل طلبك جاهزاً عبر واتساب. بسكرة وتقرت والمغير: 0669103856">
+  <link rel="icon" type="image/jpeg" href="assets/img/logo-mark.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== الترويسة ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo-mark.jpg" alt="شعار Saleh Premium" class="brand-logo">
+        <span class="brand-text">
+          <strong>Saleh Premium</strong>
+          <small>صالح بريميوم — بسكرة وتقرت والمغير</small>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">الرئيسية</a>
+        <a href="air-freshener.html">معطرات الجو</a>
+        <a href="home-parfum.html">معطرات المنزل</a>
+        <a href="bio-souna.html">Bio Souna</a>
+        <a href="offers.html">عروض الجملة</a>
+        <a href="for-stores.html">لأصحاب المتاجر</a>
+        <a href="gallery.html">المعرض</a>
+        <a href="order.html" class="active">اطلب الآن</a>
+        <a href="contact.html" class="nav-cta">اتصل بنا</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== ترويسة صفحة الطلب ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="section-title">اطلب الآن — اختر منتجاتك</h1>
+        <p>حدّد ما تحتاجه بضغطات قليلة، عدّل الكميات كما تريد، ثم أرسل طلبك كاملاً عبر واتساب في خطوة واحدة — ونؤكد لك السعر والتفاصيل في المحادثة.</p>
+      </div>
+    </section>
+
+    <!-- ===== اختيار المنتجات ===== -->
+    <section class="section">
+      <div class="container">
+        <div id="orderItems"><!-- يُبنى تلقائياً بواسطة js/order.js --></div>
+      </div>
+    </section>
+
+    <!-- ===== بيانات وإتمام الطلب ===== -->
+    <section class="section section-alt">
+      <div class="container split">
+        <div class="reveal">
+          <h2 class="section-title">بيانات الطلب <small style="font-size:0.85rem;color:var(--muted);font-weight:700;">(اختيارية)</small></h2>
+          <p class="section-sub" style="margin-bottom:20px;">تركها فارغة لا يمنع الطلب — لكنها تساعدنا نرد عليك أسرع.</p>
+          <div class="order-fields">
+            <label>الاسم <input type="text" id="orderName" placeholder="اسمك أو اسم متجرك"></label>
+            <label>الولاية <select id="orderWilaya">
+              <option value="">اختر الولاية (اختياري)</option>
+              <option value="بسكرة">بسكرة</option>
+              <option value="تقرت">تقرت</option>
+              <option value="المغير">المغير</option>
+              <option value="أخرى">أخرى</option>
+            </select></label>
+            <label>ملاحظات <input type="text" id="orderNotes" placeholder="مثال: أنوّع لي في الروائح"></label>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="order-summary">
+            <h3>طلبك</h3>
+            <p class="order-total" id="orderTotal">—</p>
+            <button class="btn btn-wa btn-lg" id="orderCheckout">إتمام الطلب عبر واتساب</button>
+            <button class="btn btn-outline-dark" id="orderCopy">نسخ نص الطلب</button>
+            <p class="order-note">أسعار الجملة حسب النوع والكمية — تُرسل طلبيتك نصاً في واتساب ونؤكد معك كل التفاصيل قبل التثبيت.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== التذييل ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <img src="assets/img/saleh-premium-logo.jpg" alt="Saleh Premium — صالح بريميوم" class="footer-logo">
+        <p><strong style="color:#fff;">صالح بريميوم — Saleh Premium</strong>: معطرات Velvet الأصلية وكريمات Bio Souna الطبيعية في بسكرة وتقرت والمغير. جودة… ثقة… استمرارية.</p>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <a href="index.html">الرئيسية</a>
+        <a href="order.html">اطلب الآن</a>
+        <a href="air-freshener.html">معطرات الجو</a>
+        <a href="home-parfum.html">معطرات المنزل</a>
+        <a href="bio-souna.html">كريم Bio Souna</a>
+        <a href="offers.html">عروض الجملة</a>
+        <a href="for-stores.html">لأصحاب المتاجر</a>
+        <a href="why-us.html">لماذا نحن؟</a>
+        <a href="faq.html">أسئلة شائعة</a>
+        <a href="about.html">من نحن</a>
+      </div>
+      <div class="footer-col">
+        <h4>للطلب والاستفسار</h4>
+        <a class="footer-phone" href="tel:0669103856">📞 0669103856</a>
+        <a class="footer-wa" href="https://wa.me/213669103856" target="_blank" rel="noopener">💬 واتساب — اضغط هنا</a>
+        <p class="footer-note">بسكرة · تقرت · المغير — الجزائر 🇩🇿</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year">2026</span> <span class="gold">Saleh Premium — صالح بريميوم</span>. جميع الحقوق محفوظة.
+    </div>
+  </footer>
+
+  <!-- ===== زر واتساب العائم ===== -->
+  <a href="https://wa.me/213669103856" class="wa-float" target="_blank" rel="noopener" aria-label="تواصل معنا عبر واتساب">
+    <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.6c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.4-.9l-.7-.4-4.9 1 1-4.7-.5-.7C6.9 17.9 6.5 16.5 6.5 15 6.5 9.8 10.8 5.5 16 5.5S25.5 9.8 25.5 15 21.2 24.8 16 24.8zm5.4-7.1c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>

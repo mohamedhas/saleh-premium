@@ -1138,3 +1138,85 @@ summary:focus-visible,
   outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
+
+/* ---------- صفحة الطلب (order.html) ---------- */
+
+.order-family { margin-bottom: 46px; }
+.order-family:last-child { margin-bottom: 0; }
+
+.order-family-title {
+  font-size: 1.3rem;
+  color: var(--plum);
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 4px solid var(--gold);
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.order-family-note { color: var(--muted); font-size: 0.95rem; margin-bottom: 18px; }
+
+.order-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+.order-item { align-items: center; }
+
+.order-item-body { flex: 1; min-width: 0; }
+.order-item-body h3 { font-size: 0.98rem; }
+.order-item-body p { font-size: 0.85rem; }
+
+.order-item-ctrl { flex-shrink: 0; }
+
+.order-stepper { display: flex; align-items: center; gap: 8px; }
+
+.order-fields { display: flex; flex-direction: column; gap: 12px; }
+
+.order-fields label {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--plum);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order-fields input,
+.order-fields select {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 11px 14px;
+  border: 1.5px solid rgba(91, 35, 64, 0.2);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--ink);
+  outline: none;
+  transition: border-color .2s;
+  width: 100%;
+}
+
+.order-fields input:focus,
+.order-fields select:focus { border-color: var(--gold); }
+
+.order-summary {
+  background: var(--white);
+  border: 1px solid rgba(91, 35, 64, 0.08);
+  border-radius: 24px;
+  padding: 30px 28px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: sticky;
+  top: calc(var(--header-h) + 16px);
+}
+
+.order-summary h3 { color: var(--plum); font-size: 1.25rem; }
+
+.order-total { font-weight: 800; color: var(--muted); font-size: 0.98rem; }
+
+.order-note { font-size: 0.85rem; color: var(--muted); }
+
+.order-summary .btn.is-disabled { opacity: 0.55; cursor: not-allowed; transform: none !important; }
+
+@media (max-width: 960px) {
+  .order-grid { grid-template-columns: 1fr; }
+}
